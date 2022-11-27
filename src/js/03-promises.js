@@ -1,3 +1,6 @@
+import Notiflix from 'notiflix';
+Notiflix.Notify.success('Sol lucet omnibus');
+
 const refs = {
   form: document.querySelector('.form'),
   delay: document.querySelector('input[name="delay"]'),

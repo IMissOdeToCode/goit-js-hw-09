@@ -67,7 +67,7 @@ flatpickr(refs.datetime_picker, options);
 
 function renderTime() {
   const { days, hours, minutes, seconds } = convertMs(milliseconds);
-  refs.days.textContent = days;
+  refs.days.textContent = `${days}`.padStart(2, '0');
   refs.hours.textContent = `${hours}`.padStart(2, '0');
   refs.minutes.textContent = `${minutes}`.padStart(2, '0');
   refs.second.textContent = `${seconds}`.padStart(2, '0');
